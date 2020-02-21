@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HelpVille | Tutoring </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Ubuntu:700&display=swap" rel="stylesheet">
+    <link rel = "icon" href ="favicon.ico" class = "favicon">
+    <style>
+        body{
+            background-image: linear-gradient(rgb(192, 159, 253), darkorchid);
+            font-size: 19px;
+            padding:0;
+            margin:0;
+            text-align: center;
+            font-family: Montserrat;
+            color:darkorchid;
+            overflow-x: hidden;
+        }
+        h1{
+            font-family: Playfair Display;
+            font-size: 450%;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in-out;
+            padding-top:70px;
+            padding-bottom:70px;
+        }
+        h1.tutoring{
+            font-family: Montserrat;
+            margin-top: -35%;
+            margin-left: 28%;
+            font-size: 300%;
+            color: rgb(245, 218, 255);
+        }
+        h1.titles{
+            color: rgb(22, 22, 22);
+            text-shadow: 5px 2px rgb(153, 153, 153);
+        }
+        #contact .titles{
+            text-shadow: 5px 2px white;
+        }
+        h1.titles:hover{
+            animation-name: textbigger;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out; 
+            animation-iteration-count: 1;
+        }
+        @keyframes textbigger{
+            from{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(0.5);
+            }
+            to{
+                transform:scale(1);
+            }
+        }
+        hr{
+            height: 10px;
+        }
+       .imgau{
+           width: 50%;
+           height: inherit;
+           transition-duration: 0.4s;
+           transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+       }
+       .imgau:hover{
+            transform: scale(1.1) rotate(5deg);
+       }
+       .cr{
+           border-radius: 20px;
+           border: solid rgb(153, 153, 153);
+           border-width: 0 5px;
+           width: 62%;
+           transition-duration: 0.4s;
+           transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+           transform: none;
+       }
+       .cr:hover{
+           border: solid rgb(153, 153, 153);
+           border-width: 5px 5px;
+           transform: scale(1.1);
+           margin-bottom: -8px;
+       }
+       .divvy{
+           font-size: 12px;
+           background-image: linear-gradient(black, rgb(53, 53, 53));
+            height: inherit;
+            min-width: 100%;
+            padding: 3%;
+            color: white;
+       }
+       .divvy h2{
+           font-size: 18px;
+       }
+        nav{
+            min-height: 25vh;
+            min-width: 100%;
+            padding-top: 70px;
+            padding-bottom: 70px;
+            margin-left: 0;
+            background-image: linear-gradient(white, rgb(202, 170, 253));
+            border-bottom-left-radius: 30%;
+            border-bottom-right-radius: 30%;
+        }
+        nav:hover{
+            animation-name:wobble;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function:ease-in-out;
+        }
+        @keyframes wobble{
+            from{
+                border-bottom-left-radius: 20%;
+                border-bottom-right-radius: 20%;
+            }
+            50%{
+                border-bottom-left-radius: 50%;
+                border-bottom-right-radius: 50%;
+            }
+            to{
+                border-bottom-left-radius: 20%;
+                border-bottom-right-radius: 20%;
+            }
+        }
+        .navbar-nav > li{
+            padding-left: 7vw;
+            padding-right: 9vw;
+        }
+        #home{
+            padding: 10%;
+            color:white;
+        }
+        #footer{
+            min-width: 100%;
+            min-height: 200px;
+            background-image: linear-gradient(darkorchid, white);
+            padding-top: 10%;
+            padding-bottom: 10%;
+            color: darkorchid;
+            border-top-left-radius: 30%;
+            border-top-right-radius: 30%;
+        }
+        #footer:hover{
+            animation-name:wobble2;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function:ease-in-out;
+        }
+        @keyframes wobble2{
+            from{
+                border-top-left-radius: 20%;
+                border-top-right-radius: 20%;
+            }
+            12.5%{
+                border-top-left-radius: 20%;
+                border-top-right-radius: 35%;
+            }
+            25%{
+                border-top-left-radius: 35%;
+                border-top-right-radius: 35%;
+            }
+            37.5%{
+                border-top-left-radius: 35%;
+                border-top-right-radius: 20%;
+            }
+            50%{
+                border-top-left-radius: 20%;
+                border-top-right-radius: 20%;
+            }
+            62.5%{
+                border-top-left-radius: 30%;
+                border-top-right-radius: 20%;
+            }
+            75%{
+                border-top-left-radius: 30%;
+                border-top-right-radius: 30%;
+            }
+            87.5%{
+                border-top-left-radius: 20%;
+                border-top-right-radius: 30%;
+            }
+            to{
+                border-top-left-radius: 20%;
+                border-top-right-radius: 20%;
+            }
+        }
+        #aboutus{
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-bottom: 10%;
+            padding-top: 5%;
+            color:darkorchid;
+            background-image: linear-gradient(white, rgb(255, 227, 249));
+            min-width: 100%;
+        }
+        #contact{
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-bottom: 10%;
+            padding-top: 5%;
+            color:white;
+        }
+        h3{
+            font-size: 16px;
+        }
+        h4{
+            font-size: 20px;
+        }
+        a, a:visited, a:link{
+            color: darkorchid;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in-out;
+        }
+        a:hover{
+            color:white;
+            text-decoration: none;
+        }
+        img.footer{
+            width: 14%;
+            height: 14%;
+        }
+        img.logo{
+            width: 50px;
+            height:50px;
+        }
+        img.giantlogo{
+            margin-top: -5vw;
+            margin-left: 4vw;
+            width: 25vw;
+            height: 25vw;
+        }
+        @-webkit-keyframes heartBeat {
+        0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        }
+
+        14% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        }
+
+        28% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        }
+
+        42% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        }
+
+        70% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        }
+        }
+
+        @keyframes heartBeat {
+        0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        }
+
+        14% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        }
+
+        28% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        }
+
+        42% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        }
+
+        70% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        }
+        }
+
+        .heartBeat {
+        -webkit-animation-name: heartBeat;
+        animation-name: heartBeat;
+        -webkit-animation-duration: 1.3s;
+        animation-duration: 1.3s;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        }
+        .anim, .anim2, .anim3{
+            visibility: hidden;
+        }
+        .removeHidden{
+            visibility: visible;
+        }
+        .navbar-toggler{
+            border-color: transparent;
+        }
+        /*!
+        * animate.css -https://daneden.github.io/animate.css/
+        * Version - 3.7.2
+        * Licensed under the MIT license - http://opensource.org/licenses/MIT
+        *
+        * Copyright (c) 2019 Daniel Eden
+        *
+        */
+    </style>
+</head>
+
+<body>
+        <section id = "header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <ul class="navbar-nav">
+               <li><a class="navbar-brand" href="#">
+                    <img src="logo.png" class="logo">
+                    </a></li>
+                    </ul>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html#home">Home<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#aboutus">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contact</a>
+                        </li>                        
+                    </ul>
+                </div>
+            </nav>
+
+        </section>
+        <section id="home" class="container anim">
+            <div class = "row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <img class="giantlogo" src="logo.png">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+                    <div data-class-in="" data-class-out="out-animation">
+                        <h1>HelpVille <h1 class = "tutoring">Tutoring</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class = "divvy container"><h2>"Learning at HelpVille is extremely convenient and effective.  Not only is Jameel performing better but he really loves writing and English because of it." <br><br>-Dani, Mom</h2></div>
+        <section id="aboutus" class="container anim2">
+            <h1 class="titles">About Us</h1>
+            <hr>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src = "blocklearn.png" class = "imgau"></div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <h3><strong>What is HelpVille Tutoring?</strong> We are a team of dedicated goal-oriented tutors offering unique services to Grade 7 to Grade
+                    9 students. Serving Calgary communities, we cover Science, Mathematics, English, Social Studies, and French
+                    following the Alberta curriculum.
+                    <strong>What sets our tutoring services apart from the rest?</strong> Our services are accessible to communities in the southwest and our
+                    tutors come directly to your home. We offer personalized academic plans that capitalize on the student's learning style,
+                    ability, and availability to yield effective results. We are very results-oriented which lends to the high-quality
+                    education your child receives.
+                    </h3>
+                </div>
+            </div> <div class = "row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <h3>
+                Your child's needs are catered to by our assessments and understanding of your child. Our services are flexible as we
+                recognize one size does not fit all and this extends to education. Our assessments help us effectively identify the
+                student's strengths and weaknesses.
+                We truly believe that students can achieve anything they set their minds to but a sizeable amount of children are
+                overwhelmed with impersonal teaching strategies and require more specialized, student-centric services to assist 
+                and encourage them to realize their full potential.
+                    </h3>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="book.png" class = "imgau"></div>
+                <br>
+            </div> <hr><br><img src="tutoring.jpg" class = "cr">
+        </section>
+        <div class="divvy container"><h2>"My tutor really helped me understand Algebra! I aced all my math tests." <br><br>-KC, Grade 7 </h2></div>
+        <section id="contact" class="container anim3">
+            <h1 class="titles">Contact</h1><hr>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <h3>Call: (403) 454-2120</h3>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <h3>Mail: helpvilletutoring@gmail.com</h3>
+                </div>
+            </div>
+        </section>
+        <section id = "footer">
+            <img src = "logo.png" class = "footer"><br><br><br>
+            <h4>
+                <a href="index.html#home">Home</a> |
+                <a href="index.html#contact">Contact</a><br></h4> <br>
+                <h3>
+                &copy; All Rights Reserved to HelpVille Tutoring 2020. This was designed by Create Sense and powered by GitHub.</h3>
+        </section>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src = "jquery.waypoints.min.js"></script>
+    <script src = "waypoints.js"></script>
+    <!-- <script src="page.js"></script> -->
+</body>
+</html>
