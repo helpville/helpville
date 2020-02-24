@@ -12,6 +12,9 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Ubuntu:700&display=swap" rel="stylesheet">
     <link rel = "icon" href ="favicon.ico" class = "favicon">
     <style>
+        body, html{
+            overflow-x: hidden;
+        }
         body{
             background-image: linear-gradient(rgb(192, 159, 253), darkorchid);
             font-size: 19px;
@@ -20,7 +23,6 @@
             text-align: center;
             font-family: Montserrat;
             color:darkorchid;
-            overflow-x: hidden;
         }
         h1{
             font-family: Playfair Display;
@@ -30,6 +32,7 @@
             padding-top:70px;
             padding-bottom:70px;
         }
+
         h1.tutoring{
             font-family: Montserrat;
             margin-top: -35%;
@@ -320,7 +323,8 @@
                 font-size:12px;
             }
             h1{
-                font-size: 16px;
+                font-size: 18px;
+                
             }
             h2{
                 font-size: 12px;
@@ -329,11 +333,14 @@
                 font-size: 11px;
             }
             h1.tutoring{
-                margin-top: -10vh;
+            transform:translateY(-5vh) translateX(-8vw) scale(1.3);
             font-size: 14px;
         }
+        h1.title{
+             transform:translateY(-5vh) translateX(2vw) scale(1.9);
+        }
         h1.titles{
-            font-size: 13px;
+            font-size: 22px;
         }
         .divvy h2{
             font-size: 10px;
@@ -387,7 +394,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
                     <div data-class-in="" data-class-out="out-animation">
-                        <h1>HelpVille <h1 class = "tutoring">Tutoring</h1>
+                        <h1 class = "title">HelpVille <h1 class = "tutoring">Tutoring</h1>
                     </div>
                 </div>
             </div>
