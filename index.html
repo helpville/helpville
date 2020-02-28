@@ -38,21 +38,22 @@
             margin-top: -35%;
             margin-left: 28%;
             font-size: 300%;
-            color: rgb(245, 218, 255);
+            color: #eac9c0;
         }
         h1.titles{
             font-size: 200%;
-            color: rgb(22, 22, 22);
-            text-shadow: 5px 2px rgb(153, 153, 153);
+            color: white;
+            padding:2vw;
         }
         #contact .titles{
-            text-shadow: 5px 2px white;
+            color: white;
         }
         h1.titles:hover{
             animation-name: textbigger;
             animation-duration: 2s;
             animation-timing-function: ease-in-out; 
             animation-iteration-count: 1;
+            cursor:pointer;
         }
         @keyframes textbigger{
             from{
@@ -76,10 +77,11 @@
        }
        .imgau:hover{
             transform: scale(1.1) rotate(5deg);
+            cursor:pointer;
        }
        .cr{
            border-radius: 20px;
-           border: solid rgb(153, 153, 153);
+           border: solid #eac9c0;
            border-width: 0 5px;
            width: 62%;
            transition-duration: 0.4s;
@@ -87,13 +89,14 @@
            transform: none;
        }
        .cr:hover{
-           border: solid rgb(153, 153, 153);
+           border: solid #eac9c0;
            border-width: 5px 5px;
            transform: scale(1.1);
            margin-bottom: -8px;
+           cursor:pointer;
        }
        .divvy{
-           background-image: linear-gradient(black, rgb(53, 53, 53));
+           background-color: #eac9c0;
             height: inherit;
             min-width: 100%;
             padding: 3%;
@@ -117,6 +120,7 @@
             animation-duration: 1s;
             animation-iteration-count: infinite;
             animation-timing-function:ease-in-out;
+            cursor:pointer;
         }
         @keyframes wobble{
             from{
@@ -155,6 +159,7 @@
             animation-duration: 3s;
             animation-iteration-count: infinite;
             animation-timing-function:ease-in-out;
+            cursor:pointer;
         }
         @keyframes wobble2{
             from{
@@ -199,8 +204,8 @@
             padding-right: 10%;
             padding-bottom: 10%;
             padding-top: 5%;
-            color:darkorchid;
-            background-image: linear-gradient(white, rgb(255, 227, 249));
+            color:white;
+            background-color: #9edae3;
             min-width: 100%;
         }
         #contact{
@@ -402,7 +407,7 @@
         <div class = "divvy container"><h2>"Learning at HelpVille is extremely convenient and effective.  Not only is Jameel performing better but he really loves writing and English because of it." <br><br>-Dani, Mom</h2></div>
         <section id="aboutus" class="container anim2">
             <h1 class="titles">About Us</h1>
-            <hr>
+            
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src = "blocklearn.png" class = "imgau"></div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -428,11 +433,11 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="book.png" class = "imgau"></div>
                 <br>
-            </div> <hr><br><img src="tutoring.jpg" class = "cr">
+            </div> <br><img src="tutoring.jpg" class = "cr">
         </section>
         <div class="divvy container"><h2>"My tutor really helped me understand Algebra! I aced all my math tests." <br><br>-KC, Grade 7 </h2></div>
         <section id="contact" class="container anim3">
-            <h1 class="titles">Contact</h1><hr>
+            <h1 class="titles">Contact</h1>
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <h3>Call: (403) 454-2120</h3>
