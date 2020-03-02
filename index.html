@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Ubuntu:700&display=swap" rel="stylesheet">
-    <link rel = "icon" href ="favicon.ico" class = "favicon">
+    <link href="https://fonts.googleapis.com/css?family=Rochester|Montserrat|Playfair+Display:900&display=swap" rel="stylesheet">
+   <link rel = "icon" href ="favicon.ico" class = "favicon">
     <style>
         body, html{
             overflow-x: hidden;
@@ -25,7 +24,7 @@
             color:darkorchid;
         }
         h1{
-            font-family: Playfair Display;
+            font-family: Rochester;
             font-size: 450%;
             transition-duration: 0.5s;
             transition-timing-function: ease-in-out;
@@ -34,13 +33,14 @@
         }
 
         h1.tutoring{
-            font-family: Montserrat;
+            font-family: Rochester;
             margin-top: -35%;
             margin-left: 28%;
             font-size: 300%;
             color: #9edae3;
         }
         h1.titles{
+            font-family: Rochester;
             font-size: 200%;
             color: white;
             padding:2vw;
@@ -96,11 +96,18 @@
            cursor:pointer;
        }
        .divvy{
+           
            background-color: #9edae3;
             height: inherit;
             min-width: 100%;
-            padding: 3%;
+            padding: 10%;
             color: white;
+            font-family: Playfair Display;
+       }
+       .student img{
+           transform:translateY(-10vh) translateX(1vw);
+           width: 60vw; 
+           height: 70vh;
        }
        .divvy h2{
            font-size: 18px;
@@ -153,6 +160,7 @@
             color: darkorchid;
             border-top-left-radius: 30%;
             border-top-right-radius: 30%;
+            font-family: Playfair Display;
         }
         #footer:hover{
             animation-name:wobble2;
@@ -222,6 +230,7 @@
             font-size: 20px;
         }
         a, a:visited, a:link{
+            font-family: Montserrat;
             color: darkorchid;
             transition-duration: 0.5s;
             transition-timing-function: ease-in-out;
@@ -396,7 +405,8 @@
             </nav>
 
         </section>
-        <section id="home" class="container anim">
+        <section id="home" class="container">
+            <div class = "anim">
             <div class = "row">
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <img class="giantlogo" src="logo.png">
@@ -407,6 +417,9 @@
                     </div>
                 </div>
             </div>
+            </div>
+           
+
         </section>
         <div class = "divvy container"><h2>"Learning at HelpVille is extremely convenient and effective.  Not only is Jameel performing better but he really loves writing and English because of it." <br><br>-Dani, Mom</h2></div>
         <section id="aboutus" class="container anim2">

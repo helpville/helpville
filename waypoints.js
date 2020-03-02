@@ -18,14 +18,6 @@ var $anim2 = $('.anim2');
         if (direction == "down") {
             $anim2.addClass('removeHidden');              
             $anim2.addClass('heartBeat');
-    //     } else {
-    //         $anim2.removeClass('heartBeat');
-    //         $anim2.removeClass('removeHidden');
-    //     setTimeout(function () {
-    //         $anim2.addClass('heartBeat');
-    //         $anim2.addClass('removeHidden');
-    //     }, 1000);
-    // }
         }
 });
 
