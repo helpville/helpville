@@ -45,15 +45,19 @@
         }
         a {
             color:white;
+            font-weight: bolder;
         }
-        nav .it, nav .it2{
+        nav .it{
             padding-left: 15vw;
         }
         .it2{
-            background-image: linear-gradient(90.28deg, #EB00FF -3.36%, rgba(255, 255, 255, 0) 116.96%), #BA5BCA;
+            background-image: linear-gradient(90.28deg, #EB00FF -3.36%, rgb(236, 138, 253));
             border-radius: 30px;
+            border: transparent;
             width: inherit;
             height:inherit;
+            color: white;
+            font-weight: bolder;
         }
         #home{
             margin-left: 10vw;
@@ -248,7 +252,7 @@
         *
         */
         @media only screen and (min-width: 901px) and (max-width: 1024px){
-            nav .it, nav .it2{
+            nav .it{
             padding-left: 8vw;
         }
              #home{
@@ -270,10 +274,14 @@
             #certif{
                 border-radius: 0;
             }
+            .it2{
+                background-image: none;
+                background-color: transparent;
+            }
         }
 
         @media only screen and (min-width: 601px) and (max-width:900px){
-            nav .it, nav .it2{
+            nav .it{
             padding-left: 0vw;
         }
             #home{
@@ -295,9 +303,13 @@
             #certif{
                 border-radius: 0;
             }
+            .it2{
+                background-image: none;
+                background-color: transparent;
+            }
         }
         @media only screen and (max-width: 600px) {
-            nav .it, nav .it2{
+        nav .it{
             padding-left: 0vw;
         }
             #home{
@@ -330,6 +342,10 @@
             #certif{
                 border-radius: 0;
             }
+            .it2{
+                background-image: none;
+                background-color: transparent;
+            }
             
         }
     </style>
@@ -359,8 +375,8 @@
                         <li class="nav-item it">
                             <a class="nav-link" href="index.html#certif">Certification</a>
                         </li>
-                        <li class="nav-item it2">
-                            <a class="nav-link" href="index.html#contact">Contact</a>
+                        <li class="nav-item it">
+                            <button class="nav-link it2" href="index.html#contact">Contact</button>
                         </li>                        
                     </ul>
                 </div>
