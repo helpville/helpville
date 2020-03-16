@@ -21,3 +21,11 @@ var $anim3 = $('.anim3');
             $anim3.addClass('heartBeat');
         }
 });
+
+var $anim4 = $('.anim4');
+$anim4.waypoint(function (direction) {
+    if (direction == "down") {
+        $anim4.addClass('removeHidden');
+        $anim4.addClass('heartBeat');
+    }
+});
