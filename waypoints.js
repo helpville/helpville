@@ -27,6 +27,7 @@ $anim4.waypoint(function (direction) {
     if (direction == "down") {
         $anim4.addClass('removeHidden');
         $anim4.addClass('heartBeat');
-    },
-        { offset: '20%'
+    }
+}, {
+    offset: '50%'
 });
